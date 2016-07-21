@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN pip install --upgrade pip
 
-RUN git clone https://github.com/AHAAAAAAA/PokemonGo-Map -b develop /home/Pokemongo-Map
+RUN git clone https://github.com/AHAAAAAAA/PokemonGo-Map -b develop /home/PokemonGo-Map
 
 RUN pip install --upgrade -r /home/PokemonGo-Map/requirements.txt
 
