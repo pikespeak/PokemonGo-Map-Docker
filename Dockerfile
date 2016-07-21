@@ -1,5 +1,5 @@
 # Dockerizing PokemonGo-Map: Dockerfile for building PokemonGo Map
-# Based on ubuntu:latest, installs PokemonGo-Map following the instructions fro$
+# Based on ubuntu:latest, installs PokemonGo-Map following the instructions from:
 # https://github.com/AHAAAAAAA/PokemonGo-Map/wiki/Installation-and-requirements
 
 FROM ubuntu:latest
@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN pip install --upgrade pip
 
-RUN git clone https://github.com/AHAAAAAAA/PokemonGo-Map -b develop /home/Pokem$
+RUN git clone https://github.com/AHAAAAAAA/PokemonGo-Map -b develop /home/Pokemongo-Map
 
 RUN pip install --upgrade -r /home/PokemonGo-Map/requirements.txt
 
