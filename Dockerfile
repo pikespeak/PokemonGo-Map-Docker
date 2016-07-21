@@ -18,7 +18,7 @@ RUN git clone https://github.com/AHAAAAAAA/PokemonGo-Map -b develop /home/Pokemo
 RUN pip install --upgrade -r /home/PokemonGo-Map/requirements.txt
 
 CMD cd /home/PokemonGo-Map && python /home/PokemonGo-Map/runserver.py \
-	-a google \
+	-a $pokemon_AuthType \
 	-u $pokemon_Username \
 	-p $pokemon_Password \
 	-l $pokemon_Location \
