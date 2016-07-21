@@ -1,6 +1,3 @@
-
-  GNU nano 2.2.6         File: PokemonGo-Map/Dockerfile                         
-
 # Dockerizing PokemonGo-Map: Dockerfile for building PokemonGo Map
 # Based on ubuntu:latest, installs PokemonGo-Map following the instructions fro$
 # https://github.com/AHAAAAAAA/PokemonGo-Map/wiki/Installation-and-requirements
