@@ -2,15 +2,9 @@
 # Based on ubuntu:latest, installs PokemonGo-Map following the instructions from:
 # https://github.com/AHAAAAAAA/PokemonGo-Map/wiki/Installation-and-requirements
 
-FROM ubuntu:latest
+FROM python:2.7-alpine
 MAINTAINER Oliver Mark olivermark83@gmail.com
 
-# Install Ubuntu Upgrades and required Software
-RUN apt-get update && apt-get install -y \
-  git \
-  python \
-  vim \
-  python-pip
 
 # Upgrade Python Installer PIP
 RUN pip install --upgrade pip
