@@ -29,7 +29,7 @@ CMD python /home/PokemonGo-Map/runserver.py \
 	-u $pokemon_Username \
 	-p $pokemon_Password \
 	-l $pokemon_Location \
-	-s $pokemon_StepLimit \
+	-st $pokemon_StepLimit \
 	-k $pokemon_Gmapskey \
 	-H 0.0.0.0 \
 	-L de
