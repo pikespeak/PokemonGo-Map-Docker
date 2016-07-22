@@ -32,6 +32,4 @@ CMD python /home/PokemonGo-Map/runserver.py \
 	-s $pokemon_StepLimit \
 	-k $pokemon_Gmapskey \
 	-H 0.0.0.0 \
-	-L DE \
-	-sd 360
-
+	-L de
