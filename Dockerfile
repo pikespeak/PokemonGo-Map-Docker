@@ -17,14 +17,8 @@ RUN pip install --upgrade pip
 #Working Directory For App
 WORKDIR /home/PokemonGo-Map
 
-# Clone Develop Branche of PokemonGo-Map from Github
-#RUN git clone https://github.com/PokemonGoMap/PokemonGo-Map -b develop /home/PokemonGo-Map
-
-# Install PokemanGo-Map Requirements 
-#RUN pip install --upgrade -r /home/PokemonGo-Map/requirements.txt
-
 # This command is run while Starting Docker Container
-CMD git clone https://github.com/AHAAAAAAA/PokemonGo-Map -b develop /home/PokemonGo-Map && \ 
+CMD git clone https://github.com/PokemonGoMap/PokemonGo-Map -b develop /home/PokemonGo-Map && \ 
     pip install --upgrade -r /home/PokemonGo-Map/requirements.txt && \    
     python /home/PokemonGo-Map/runserver.py \
 		-a $pokemon_AuthType \
