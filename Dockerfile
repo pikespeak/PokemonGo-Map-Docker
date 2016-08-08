@@ -18,7 +18,7 @@ RUN pip install --upgrade pip
 WORKDIR /home/PokemonGo-Map
 
 # Clone Develop Branche of PokemonGo-Map from Github
-#RUN git clone https://github.com/AHAAAAAAA/PokemonGo-Map -b develop /home/PokemonGo-Map
+#RUN git clone https://github.com/PokemonGoMap/PokemonGo-Map -b develop /home/PokemonGo-Map
 
 # Install PokemanGo-Map Requirements 
 #RUN pip install --upgrade -r /home/PokemonGo-Map/requirements.txt
