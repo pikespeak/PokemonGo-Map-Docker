@@ -20,6 +20,7 @@ WORKDIR /home/PokemonGo-Map
 # This command is run while Starting Docker Container
 CMD git clone https://github.com/PokemonGoMap/PokemonGo-Map -b develop /home/PokemonGo-Map && \ 
     pip install --upgrade -r /home/PokemonGo-Map/requirements.txt && \    
+    npm install && npm run build && \
     python /home/PokemonGo-Map/runserver.py \
 		-a $pokemon_AuthType \
 		-u $pokemon_Username \
