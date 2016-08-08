@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y \
   git \
   python \
   npm \
+  node \
   python-pip
 
 # Upgrade Python Installer PIP
