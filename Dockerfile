@@ -9,6 +9,7 @@ MAINTAINER Oliver Mark olivermark83@gmail.com
 RUN apt-get update && apt-get install -y \
   git \
   python \
+  npm \
   python-pip
 
 # Upgrade Python Installer PIP
